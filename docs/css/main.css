@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: grid;
+    background-color: rgb(16, 18, 35);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font: 300 0.9rem 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0.2rem 1.5rem;
+}
+
+.logo-pic-li,
+.search-bar-li,
+.profile-pic-li {
+    padding: 0;
+}
+
+.left-nav,
+.right-nav {
+    padding: 0 1rem;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.right-nav li {
+    margin: 0.2rem 1.1rem;
+}
+
+.logo-name {
+    font: bold medium "Roboto", sans-serif;
+    margin: 0;
+}
+
+li img {
+    height: 3rem;
+}
+
+.profile-pic {
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.svg-image {
+    height: 1.1rem;
+    filter: invert(80%);
+}
+
+#search-bar {
+    background-color: rgb(63, 63, 72);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    width: 15rem;
+}
+
