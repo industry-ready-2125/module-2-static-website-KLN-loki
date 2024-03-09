@@ -1,5 +1,313 @@
 body {
     margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(16, 18, 35);
+    color: white;
+    padding: 0 2.5rem;
+}
+
+nav > div {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li img {
+    display: flex;
+    width: 2.5rem;
+}
+
+li {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 1.3rem 1.5rem ;
+    opacity: 80%;
+    transition: all;
+}
+
+li:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.logo-item {
+    margin: 0.5rem ;
+    opacity: 90%;;
+}
+
+.logo-name {
+    opacity: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.selected-li {
+    opacity: 100%;
+}
+
+#search-bar {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+    background-color: rgba(122, 142, 130, 0.438);
+    border: 2px solid grey;
+    border-radius: 0.3rem;
+}
+
+li > a {
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    opacity: 100%;
+}
+
+.login-button {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+.signup-button {
+    background-color: rgb(65, 130, 0);
+    cursor: pointer;
+}
+
+.login-button-li, .signup-button-li {
+    opacity: 100%;
+}
+
+section {
+    margin: 1rem 10rem;
+}
+
+.current-selected-info p{
+    padding: 0;
+    margin: 0 0 0.4rem 0;
+}
+
+.prepare {
+    color: rgb(202, 202, 202);
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.dashboard {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+hr {
+    opacity: 25%;
+}
+
+.current-selected-details > p{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 2.5rem;
+}
+
+.current-selected-details > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.current-selected-details > div > div{
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    gap: 1rem;
+}
+
+.current-selected-details > div > div > p {
+    margin: 0;
+}
+
+.overview-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.281);
+}
+
+.course-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.course-description {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-wrap: wrap ;
+    color: rgba(0, 0, 0, 0.467);
+}
+
+.current-selected-details > div > div > button {
+    width: fit-content;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    background-color: rgb(65, 130, 0);
+}
+
+#explore-skills-button {
+    background-color: rgba(0, 0, 0, 0.055);
+    color: black;
+    transition: all 25ms;
+}
+
+#explore-skills-button:hover {
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.certification > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.certification > div > div {
+    position: relative;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.certification img {
+    position: absolute;
+    min-width: 40%;
+    max-width: 40%;
+    right: -10%;
+    z-index: -1;
+    /* overflow: hidden; */
+    opacity: 10%;
+}
+
+.certification > div > div >  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+span {
+    font-size: 1rem;
+    opacity: 60%;
+}
+
+.certification > div > div > button {
+    font-size: small;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.047);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.certification-third-div {
+    color: white;
+    background-color: rgb(0, 2, 26);
+}
+
+.certification-third-div > .heading {
+    font-size: 1.2rem;
+}
+
+.certification-third-div > .description {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+#view-all-certifcations-button {
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+
+.prepare-by-topic {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    margin: 0;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -221,4 +529,4 @@ hr {
     border-radius: 0.2rem;
     padding: 0.8rem 1rem;
     margin-top: 0.8rem;
-}
+} */
