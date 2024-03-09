@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -8,14 +9,36 @@ nav {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.menu-li:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Prepare:hover {
+    opacity: 1;
+}
+
+.menu-li, .Prepare {
+    opacity: 0.8;
+    transition: all;
+}
+
+.Prepare {
+    opacity: 1;
+}
+
 ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     color: white;
-    font: 300 0.9rem 'Roboto', sans-serif;
+    font: 300 0.9rem 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+ul:hover {
+    cursor: pointer;
 }
 
 li {
@@ -44,7 +67,7 @@ li {
 }
 
 .logo-name {
-    font: bold medium "Roboto", sans-serif;
+    font: bold medium "Open Sans", sans-serif;
     margin: 0;
 }
 
@@ -70,3 +93,131 @@ li img {
     width: 15rem;
 }
 
+section {
+    margin: 1.3rem 10.3rem;
+}
+
+.info-section > p {
+    color: rgb(202, 202, 202);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.info-section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.info-section > div > p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+.info-section a {
+    color: rgb(28, 133, 199);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+hr {
+    opacity: 0.15;
+}
+
+.heading-section > p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2rem 0 0 0;
+}
+
+.course-div {
+    border: 1px solid rgba(169, 169, 169, 0.2);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.course-img-div {
+    height: 7em;
+    width: 7em;
+    position: absolute;
+    right: -2em;
+    top: -2em;
+    background-image: url(/docs/images/hexagon-fill.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.course-img-div > img {
+    max-width: 25%;
+    min-width: 25%;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 30%;
+    margin: auto; 
+}
+
+.course-img-div > div {
+    margin-top: 55%;
+}
+
+.course-img-div > div > p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.course-div > p {
+    margin: 0;
+    margin-bottom: 0.9rem;
+}
+
+.course-info, .progress-bar-info  {
+    font-size: 0.8rem;
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+}
+
+.course-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.progress-bar-div {
+    background-color: rgba(128, 128, 128, 0.523);
+    height: 0.35rem;
+    margin-bottom: 0.9rem;
+}
+
+.progress-bar-div > div {
+    background-color: black;
+    height: 0.35rem;
+    width: 67%;
+    opacity: 1;
+}
+
+.progress-bar-info > span {
+    color: black;
+    font-weight: bold;
+}
+
+.course-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem 1rem;
+    margin-top: 0.8rem;
+}
