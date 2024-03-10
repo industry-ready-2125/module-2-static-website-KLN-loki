@@ -153,6 +153,7 @@ hr {
 
 .course-title {
     font-size: 1.7rem;
+    opacity: 80%;
     font-weight: bold;
 }
 
@@ -240,14 +241,100 @@ span {
     padding: 0.6rem;
 }
 
-.prepare-by-topic {
-
+.prepare-by-topic > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
+.prepare-by-topic > div > div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: left;
+    padding: 1rem;
+    border-radius: 0;
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.032);
+}
 
+.prepare-by-topic > div > div:hover {
+    background-color: rgba(0, 0, 0, 0.025);
+}
 
+.prepare-by-topic span {
+    font-size: large;
+    opacity: 75%;
+}
 
+.preparation-kits a {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+}
 
+.preparation-kits > div {
+    grid-template-columns: 1fr 1fr;
+}
+
+.preparation-kits > div > div > img {
+    max-width: 25%;
+    min-width: 25%;
+    top: 45%;
+}
+
+.preparation-kits > div > div> .course-title {
+    font-size: 1.2rem;
+    opacity: 80%;
+}
+
+.preparation-kits > div > div> .course-description {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.preparation-kits > div > div > p > span {
+    font-size: 0.9rem;
+    color: black;
+    opacity: 100%;
+}
+
+.preparation-kits > div > div > div > button {
+    background-color: rgb(231, 238, 232);
+    color: rgb(82, 82, 82);
+    padding: 0.7rem 0.9rem;
+    margin-right: 0.5rem;
+}
+
+#button-oneplus {
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 0;
+}
+
+footer {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer > a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(0, 138, 218);
+}
+
+footer > p {
+    margin: 0;
+    font-size: 1.2rem;
+    opacity: 50%;
+}
 
 
 
@@ -367,7 +454,7 @@ li {
 .right-nav {
     display: flex;
     justify-content: flex-end;
-
+    
 }
 
 .right-nav li {
@@ -529,4 +616,29 @@ hr {
     border-radius: 0.2rem;
     padding: 0.8rem 1rem;
     margin-top: 0.8rem;
+}
+.prepare-by-topic > table{
+    border: 1px solid rgba(0, 0, 0, 0.159);
+    border-radius: 0.5rem;
+    border-collapse: collapse;
+}
+
+td {
+    column-span: 1;
+    border: 1px solid rgba(0, 0, 0, 0.153);
+    align-items: center;
+    padding: 1rem;
+}
+
+table img {
+    max-width: 6%;
+    min-width: 6%;
+    padding: 0 1rem;
+    opacity: 60%;
+}
+
+table span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 70%;
 } */
