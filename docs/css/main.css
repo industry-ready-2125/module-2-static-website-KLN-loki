@@ -4,6 +4,26 @@ body {
     font-family: 'Open Sans';
 }
 
+.other-pages-buttons-div {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-pages-buttons-div > button {
+    background-color: rgb(37, 28, 88);
+    transform: rotate(90deg);
+    box-shadow: 0 0 0.5rem rgb(54, 54, 54);
+}
+
+.other-pages-buttons-div > button > a {
+    color: white;
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
