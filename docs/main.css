@@ -19,6 +19,10 @@ body {
     box-shadow: 0 0 0.5rem rgb(54, 54, 54);
 }
 
+.other-pages-buttons-div > button.page-left {
+    transform: rotate(-90deg);
+}
+
 .other-pages-buttons-div > button > a {
     color: white;
     text-decoration: none;
@@ -124,13 +128,17 @@ section {
 }
 
 .prepare {
-    color: rgb(202, 202, 202);
+    color: rgb(177, 177, 177);
     font-size: 0.85rem;
     font-weight: 300;
 }
 
+.prepare > span{
+    font-size: 0.75rem;
+}
+
 .dashboard {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 
